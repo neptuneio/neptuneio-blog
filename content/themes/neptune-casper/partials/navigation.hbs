@@ -1,0 +1,23 @@
+<div class="nav">
+    <h3 class="nav-title">Menu</h3>
+    <a href="#" class="nav-close">
+        <span class="hidden">Close</span>
+    </a>
+    <ul>
+        {{#foreach navigation}}
+            <li class="nav-{{slug}}{{#if current}} nav-current{{/if}}" role="presentation"><a href="{{url absolute="true"}}">{{label}}</a> 
+            </li>
+        {{/foreach}}
+        </ul>
+
+        <div>
+        <form action="//neptune.us11.list-manage.com/subscribe/post?u=ed0a8eccb382bbf39b72fa8e5&amp;id=531b3838a7" method="post" name="mc-embedded-subscribe-form" target="_blank" novalidate  style="margin-left:25px;">
+        <div style="position: absolute; left: -5000px;"><input type="text" name="b_ed0a8eccb382bbf39b72fa8e5_531b3838a7" tabindex="-1" value=""></div>
+        <input class="nav-email-input" type="email" value="" name="EMAIL" placeholder="Email address">
+        <button class="nav-email-subscription-button" type="submit" value="Subscribe" name="subscribe">Subscribe</button>
+        </form>
+        </div>
+
+
+</div>
+<span class="nav-cover"></span>
