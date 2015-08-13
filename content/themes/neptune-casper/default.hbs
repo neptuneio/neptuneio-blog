@@ -17,6 +17,8 @@
     {{! Styles'n'Scripts }}
     <link rel="stylesheet" type="text/css" href="{{asset "css/screen.css"}}" />
     <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Merriweather:300,700,700italic,300italic|Open+Sans:700,400" />
+    <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Merriweather:300,700,700italic,300italic|Open+Sans:700,400" />
+    <link rel="stylesheet" type="text/css" href="//maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css" />
 
     {{! Ghost outputs important style and meta data with this tag }}
     {{ghost_head}}
@@ -33,24 +35,26 @@
 
       {{! Mailchimp email subscription here}}
 
-      <div class="email-subscription">
-        <form class="form-wrapper cf" action="//neptune.us11.list-manage.com/subscribe/post?u=ed0a8eccb382bbf39b72fa8e5&amp;id=531b3838a7" method="post" name="mc-embedded-subscribe-form" target="_blank" novalidate >
+     <div class="email-subscription">
+        <div class="neptuneio-subscribe-message">Subscribe to get DevOps best practices delivered to you directly</div>
+        <form class="neptuneio-form-wrapper cf" action="//neptune.us11.list-manage.com/subscribe/post?u=ed0a8eccb382bbf39b72fa8e5&amp;id=531b3838a7" method="post" name="mc-embedded-subscribe-form" target="_blank" validate >
           <div style="position: absolute; left: -5000px;"><input type="text" name="b_ed0a8eccb382bbf39b72fa8e5_531b3838a7" tabindex="-1" value=""></div>
           <input type="email" value="" name="EMAIL" placeholder="Email address">
-          <button type="submit" value="Subscribe" name="subscribe" style="float:right;" >Subscribe</button>
+          <button class="fa fa-paper-plane neptuneio-newsletter-button" type="submit" value="Subscribe" name="subscribe"></button>
         </form>
       </div>
 
     </div>
 
-
     <footer class="site-footer clearfix">
       <section class="neptuneio-footer-section">
-        <a href="https://www.neptune.io">NEPTUNE.IO</a> &copy; {{date format="YYYY"}}
+        &copy; {{date format="YYYY"}}
+        <a href="https://www.neptune.io">NEPTUNE.IO</a>
+        <a href="https://blog.neptune.io">BLOG</a>
+        <a href="https://twitter.com/neptuneio">TWITTER</a>
         <a href="https://www.neptune.io/features.html">FEATURES</a>
         <a href="https://www.neptune.io/index.html#pricing">PRICING</a> 
         <a href="https://www.neptune.io/aboutUs.html">ABOUT US </a>
-        <a href="https://www.neptune.io/demo">DEMO</a>
         <a href="https://www.neptune.io/account/signup">SIGN UP</a>
         <a href="https://www.neptune.io/account/login">LOGIN</a>
       </section>
